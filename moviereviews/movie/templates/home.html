@@ -1,0 +1,25 @@
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<div class="container">
+  <form action="">
+    <div class="mb-3">
+      <label for="searchMovie" class="form-label"> 
+        Search for Movie: 
+      </label>
+      <input type="text" class="form-control" name="searchMovie" />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+  Searching for {{ searchTerm }}
+  <br />
+  <br />
+  <h2>Join our mailing list:</h2>
+  <form action="{% url 'signup' %}">
+    <div class="mb-3">
+      <label for="email" class="form-label"> Enter your email: </label>
+      <input type="email" class="form-control" name="email" />
+    </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </form>
+</div>
